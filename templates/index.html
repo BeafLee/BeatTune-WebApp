@@ -11,9 +11,10 @@
 
     <form action="{{url_for('mp4_downloader')}}" method="post">
         <label for="url">YouTube URL:</label>
-        <input type="text" id="url" name="url" required>
+        <input type="text" id="url" name="url" required autocomplete="url">
         <br>
-        <button type="submit">Download MP4</button>
+        <button type="submit" name="btn" value="mp4">Download MP4</button>
+        <button type="submit" name="btn" value="mp3">Download MP3</button>
     </form>
     <h3>Paste the urls</h3>
 </body>
