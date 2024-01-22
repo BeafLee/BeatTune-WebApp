@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeatTune</title>
+</head>
+<body>
+    <h1>BeafTune</h1>
+    <h2>A Video and Music Youtube downloader</h2>
+
+    <form action="{{url_for('mp4_downloader')}}" method="post">
+        <label for="url">YouTube URL:</label>
+        <input type="text" id="url" name="url" required>
+        <br>
+        <button type="submit">Download MP4</button>
+    </form>
+    <h3>Paste the urls</h3>
+</body>
+</html>
